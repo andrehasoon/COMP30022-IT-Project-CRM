@@ -9,7 +9,7 @@
 ## General Info
 A capstone subject from the University of Melbourne, designed to tie together everything learnt in an undergraduate bachelor's degree (computer and software systems major), to facilitate the transition to the world of employment, and to meet accreditation requiremnts.  
   
-Project specification: To design, develop and deploy a customer relationship management (CRM) web application, based on a certain set of business reuiqrements, set by our client, Max Plumley, mplumley@student.unimelb.edu.au .
+Project specification: To design, develop and deploy a customer relationship management (CRM) web application, based on a certain set of business reuiqrements, set by our client, Max Plumley, mplumley@student.unimelb.edu.au.
   
 **URL:** https://team-ion-crm.herokuapp.com/  
   
