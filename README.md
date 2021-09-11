@@ -24,7 +24,7 @@ Project specification: To design, develop and deploy a customer relationship man
   
 ## Team Members
  Name | Email | Primary Role
------------- | -------------
+------------ | ------------- | -------------
  Tharun Dharmawickrema  | tdharmawickr@student.unimelb.edu.au | Backend
  Devaka Dias  | devakapradee@student.unimelb.edu.au | Frontend
  André Hasoon  | ahasoon@student.unimelb.edu.au | Frontend
@@ -32,7 +32,7 @@ Project specification: To design, develop and deploy a customer relationship man
  Ngo Chi (Tyler) Wong  | ngochiw@student.unimelb.edu.au | Frontend
   
 ## Business Requirements 
- Featuer | Priority
+ Feature | Priority
 ------------ | -------------
  Add contacts  | High 
  Search contacts  | High
