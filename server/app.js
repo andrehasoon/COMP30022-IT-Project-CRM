@@ -1,14 +1,17 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const mongoose = require('mongoose');
-const cors = require('cors')
+// const express = require('express');
+// const bodyParser = require('body-parser');
+// const mongoose = require('mongoose');
+// const cors = require('cors')
 
-// import express from 'express';
-// import bodyParser from 'body-parser';
-// import mongoose from 'mongoose';
-// import cors from 'cors';
+import express from 'express';
+import bodyParser from 'body-parser';
+import mongoose from 'mongoose';
+import cors from 'cors';
 
-require('dotenv').config();
+
+import dotenv from 'dotenv';
+dotenv.config();
+// require('dotenv').config();
 // using import instead of const require syntax as it is a newer standard
 // Both ways function the same 
 
@@ -28,33 +31,32 @@ const PORT = process.env.PORT || 5000;
 
 
 // Connecting to MongoDB
-// mongoose.connect(MONGO_URL, {
-//     useNewUrlParser:true,
-//     useUnifiedTopology:true,
-//     useFindAndModify: false
-// }).then(() => app.listen(PORT, () =>
-//     console.log('Connection is established and running on port:' + PORT)
-// )).catch((err) => console.log(err.message));
+mongoose.connect(MONGO_URL, {
+    useNewUrlParser:true,
+    useUnifiedTopology:true
+    // useFindAndModify: false
+}).then(() => app.listen(PORT, () =>
+    console.log('Connection is established and running on port:' + PORT)
+)).catch((err) => console.log(err.message));
 
 // mongoose.set('useFindAndModify',false);
 
 console.log(MONGO_URL)
 
-mongoose.connect(MONGO_URL || "mongodb://localhost", {
-  useNewUrlParser: true,
-//   useCreateIndex: true,
-  useUnifiedTopology: true
-//   useFindAndModify: false,
-//   dbName: "snacksinavan"
-})
+// mongoose.connect(MONGO_URL || "mongodb://localhost", {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true
 
-const db = mongoose.connection
+// //   dbName: "snacksinavan"
+// })
 
-db.on("error", err => {
-  console.error(err);
-  process.exit(1)
-})
+// const db = mongoose.connection
 
-db.once("open", async () => {
-  console.log("Mongo connection started on " + db.host + ":" + db.port)
-})
+// db.on("error", err => {
+//   console.error(err);
+//   process.exit(1)
+// })
+
+// db.once("open", async () => {
+//   console.log("Mongo connection started on " + db.host + ":" + db.port)
+// })
