@@ -1,10 +1,28 @@
 import React, { Component } from "react";
 import {Link} from 'react-router-dom';
+import backgroundVideo from "../resources/backgroundVideo.mp4"
 
 export default class SignUp extends Component {
     render() {
         return (
             <form>
+                <div className="form-group">
+                    <video autoPlay loop muted
+                    style = {{
+                        position: "absolute",
+                        width: "100%",
+                        left: "0%",
+                        top: "0%",
+                        height: "100%",
+                        objectFit: "cover",
+                        // transform: "translate(-50%,-50%)",
+                        zIndex: "-1",
+                        opacity: "85%"
+                    }}
+                    >
+                        <source src = {backgroundVideo} type ="video/mp4"></source>
+                    </video>
+                </div>
                 <h3>Sign Up</h3>
 
                 <div className="form-group">

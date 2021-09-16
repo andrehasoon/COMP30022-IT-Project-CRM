@@ -1,12 +1,30 @@
 import React, { Component } from "react";
 import {Link} from 'react-router-dom';
 //Now with link coming from react-router you can use **to**
+import backgroundVideo from "../resources/backgroundVideo.mp4"
 
 
 export default class Login extends Component {
     render() {
         return (
             <form>
+                <div className="form-group">
+                    <video autoPlay loop muted
+                    style = {{
+                        position: "absolute",
+                        width: "100%",
+                        left: "0%",
+                        top: "0%",
+                        height: "100%",
+                        objectFit: "cover",
+                        // transform: "translate(-50%,-50%)",
+                        zIndex: "-1",
+                        opacity: "90%"
+                    }}
+                    >
+                        <source src = {backgroundVideo} type ="video/mp4"></source>
+                    </video>
+                </div>
                 <h3>Welcome</h3>
 
                 {/* Username Field */}
